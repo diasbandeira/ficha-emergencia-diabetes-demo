@@ -11,7 +11,7 @@
 | Total de ações | 11 |
 | Paralelizáveis (`[//]`) | 2 |
 | Maior cadeia de dependência | 7 |
-| Concluídas | 4 |
+| Concluídas | 10 |
 
 ## Fase 1, Preparação
 
@@ -25,23 +25,23 @@
 
 | ID | Descrição | Dependências | Paralelismo | Arquivo alvo | Confidência | Status |
 |----|-----------|--------------|-------------|--------------|-------------|--------|
-| T004 | Criar a SPA estática e configurar o `base`, a navegação compatível com GitHub Pages e o workflow Pages somente no repositório novo | T002 | - | `<prototype-repo>/vite.config.ts`, `<prototype-repo>/.github/workflows/` | 🟡 | `[ ]` |
+| T004 | Criar a SPA estática e configurar o `base`, a navegação compatível com GitHub Pages e o workflow Pages somente no repositório novo | T002 | - | `<prototype-repo>/vite.config.ts`, `<prototype-repo>/.github/workflows/` | 🟡 | `[X]` |
 | T005 | Criar modelo e dados sintéticos de demonstração, com rótulos e visibilidade por bloco, sem importar conteúdo do site atual | T002 | - | `<prototype-repo>/src/data/emergencyDemoData.ts` | 🟢 | `[X]` |
 
 ## Fase 3, Núcleo demonstrativo
 
 | ID | Descrição | Dependências | Paralelismo | Arquivo alvo | Confidência | Status |
 |----|-----------|--------------|-------------|--------------|-------------|--------|
-| T006 | Implementar a gestão demonstrativa de perfil e consentimentos com dados sintéticos | T004, T005 | - | `<prototype-repo>/src/pages/EmergencyDemo.tsx` | 🟢 | `[ ]` |
-| T007 | Implementar visualização emergencial de demonstração, incluindo QR/link apenas demonstrativo, sem expor dados reais | T004, T005, T006 | - | `<prototype-repo>/src/components/emergency-demo/EmergencyView.tsx` | 🟡 | `[ ]` |
-| T008 | Implementar simulação em memória de atualização e revogação do compartilhamento com feedback visível | T006, T007 | - | `<prototype-repo>/src/components/emergency-demo/` | 🟡 | `[ ]` |
+| T006 | Implementar a gestão demonstrativa de perfil e consentimentos com dados sintéticos | T004, T005 | - | `<prototype-repo>/src/pages/EmergencyDemo.tsx` | 🟢 | `[X]` |
+| T007 | Implementar visualização emergencial de demonstração, incluindo QR/link apenas demonstrativo, sem expor dados reais | T004, T005, T006 | - | `<prototype-repo>/src/components/emergency-demo/EmergencyView.tsx` | 🟡 | `[X]` |
+| T008 | Implementar simulação em memória de atualização e revogação do compartilhamento com feedback visível | T006, T007 | - | `<prototype-repo>/src/components/emergency-demo/` | 🟡 | `[X]` |
 
 ## Fase 4, Validação
 
 | ID | Descrição | Dependências | Paralelismo | Arquivo alvo | Confidência | Status |
 |----|-----------|--------------|-------------|--------------|-------------|--------|
-| T009 | Integrar o roteiro de validação e registro de observações sem coletar dados pessoais | T003, T006, T007, T008 | - | `<prototype-repo>/src/pages/EmergencyDemo.tsx`, `onboarding.md` | 🟡 | `[ ]` |
-| [//] T010 | Revisar textos, avisos persistentes de demonstração, labels e bloqueios contra interpretação como serviço real | T006, T007, T008 | `[//]` | `<prototype-repo>/src/` | 🟢 | `[ ]` |
+| T009 | Integrar o roteiro de validação e registro de observações sem coletar dados pessoais | T003, T006, T007, T008 | - | `<prototype-repo>/src/pages/EmergencyDemo.tsx`, `onboarding.md` | 🟡 | `[X]` |
+| [//] T010 | Revisar textos, avisos persistentes de demonstração, labels e bloqueios contra interpretação como serviço real | T006, T007, T008 | `[//]` | `<prototype-repo>/src/` | 🟢 | `[X]` |
 | T011 | Executar build, verificar artefato e navegação no Pages novo e confirmar que URL/QR Codes antigos continuam funcionando sem alteração no deploy atual | T004, T009, T010 | - | `<prototype-repo>/`, `onboarding.md` | 🟢 | `[ ]` |
 
 ## Notas de execução
@@ -62,3 +62,4 @@
 | 2026-11-08 | Replanejado para repositório GitHub Pages limpo e independente, com bloqueio de provisionamento até decisão de visibilidade/nome/URL. | André/Reversa |
 | 2026-11-08 | Confirmados repositório público, URL e clone local; T001/T002 concluídas e Reversa instalado no workspace novo. | André/Reversa |
 | 2026-11-09 | T003 verificada no onboarding; iniciada a base estática isolada e conteúdo sintético. | Copilot/Reversa |
+| 2026-11-09 | Verificação de código: T004–T010 implementadas (SPA com hash routing, workflow `pages.yml`, gestão simulada, visualização emergencial com QR, checklist do facilitador, avisos persistentes). Build local `npm run build` passou (tsc + vite). T011 pendente: `https://diasbandeira.github.io/ficha-emergencia-diabetes-demo/` retorna 404; habilitar Pages com fonte "GitHub Actions" e revalidar navegação. | opencode/Reversa |
