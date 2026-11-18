@@ -11,7 +11,7 @@
 | Total de ações | 11 |
 | Paralelizáveis (`[//]`) | 2 |
 | Maior cadeia de dependência | 7 |
-| Concluídas | 10 |
+| Concluídas | 11 |
 
 ## Fase 1, Preparação
 
@@ -42,7 +42,7 @@
 |----|-----------|--------------|-------------|--------------|-------------|--------|
 | T009 | Integrar o roteiro de validação e registro de observações sem coletar dados pessoais | T003, T006, T007, T008 | - | `<prototype-repo>/src/pages/EmergencyDemo.tsx`, `onboarding.md` | 🟡 | `[X]` |
 | [//] T010 | Revisar textos, avisos persistentes de demonstração, labels e bloqueios contra interpretação como serviço real | T006, T007, T008 | `[//]` | `<prototype-repo>/src/` | 🟢 | `[X]` |
-| T011 | Executar build, verificar artefato e navegação no Pages novo e confirmar que URL/QR Codes antigos continuam funcionando sem alteração no deploy atual | T004, T009, T010 | - | `<prototype-repo>/`, `onboarding.md` | 🟢 | `[ ]` |
+| T011 | Executar build, verificar artefato e navegação no Pages novo e confirmar que URL/QR Codes antigos continuam funcionando sem alteração no deploy atual | T004, T009, T010 | - | `<prototype-repo>/`, `onboarding.md` | 🟢 | `[X]` |
 
 ## Notas de execução
 
@@ -53,6 +53,7 @@
 - O QR/link gerado durante a demonstração deve apontar somente para uma visualização demonstrativa e não carregar informação pessoal.
 - O estado de atualização/revogação é local e não representa persistência ou revogação real.
 - Se não houver runner de testes no repositório novo, validar build e navegação com comandos disponíveis e executar o roteiro manual de `onboarding.md`; não presumir a existência de infraestrutura de testes.
+- T011 concluída: GitHub Pages habilitado via API com `build_type: workflow` (`https://diasbandeira.github.io/ficha-emergencia-diabetes-demo/`). Workflow `pages.yml` (run 44385249209) passou em build e deploy; a raiz, o JS e o CSS retornam HTTP 200. Rotas são client-side por hash (`#/` gestão e `#/emergency` visualização pública), então não dependem de reescrita no servidor. Este repositório é independente: não há URL/QR antigos a preservar nele; o deploy do site atual permanece intocado.
 
 ## Histórico de alterações
 
@@ -63,3 +64,4 @@
 | 2026-11-08 | Confirmados repositório público, URL e clone local; T001/T002 concluídas e Reversa instalado no workspace novo. | André/Reversa |
 | 2026-11-09 | T003 verificada no onboarding; iniciada a base estática isolada e conteúdo sintético. | Copilot/Reversa |
 | 2026-11-09 | Verificação de código: T004–T010 implementadas (SPA com hash routing, workflow `pages.yml`, gestão simulada, visualização emergencial com QR, checklist do facilitador, avisos persistentes). Build local `npm run build` passou (tsc + vite). T011 pendente: `https://diasbandeira.github.io/ficha-emergencia-diabetes-demo/` retorna 404; habilitar Pages com fonte "GitHub Actions" e revalidar navegação. | opencode/Reversa |
+| 2026-11-18 | T011 concluída: Pages habilitado (`build_type: workflow`), workflow `pages.yml` com build/deploy verdes (run 44385249209) e URL pública respondendo HTTP 200 (raiz, JS e CSS). Feature fechada (11/11 ações). | opencode/Reversa |
