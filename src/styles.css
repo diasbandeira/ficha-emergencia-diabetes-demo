@@ -19,6 +19,37 @@
   --amber: #ffd166;
   --amber-ink: #392700;
   font-weight: 400;
+
+  /* Token layer de tema (feature 002-layout-implementacao-real) */
+  --color-primary: #2a6f9e;
+  --color-primary-strong: #1f5a80;
+  --color-primary-soft: #e6eef4;
+  --color-on-primary: #ffffff;
+  --color-text: #142f43;
+  --color-text-muted: #435d70;
+  --color-surface: #ffffff;
+  --color-surface-alt: #edf4f3;
+  --color-border: #c9d8dd;
+  --color-alert-bg: #fff3ec;
+  --color-alert-border: #c98267;
+  --color-alert-text: #542718;
+  --color-emergency: #b42318;
+  --color-public: #086c62;
+  --color-private: #325c76;
+
+  --font-size-base: 16px;
+  --font-size-alert: 20px;
+  --font-size-h1: 28px;
+  --font-size-h2: 20px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --touch-target: 44px;
 }
 
 * {
@@ -170,8 +201,8 @@ a {
 }
 
 .main-nav__link.is-active {
-  color: #ffffff;
-  background: #08736d;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
 }
 
 .page-container {
@@ -216,9 +247,9 @@ a {
 }
 
 .route-stop.is-current .route-stop__dot {
-  border-color: #ffffff;
-  background: var(--teal);
-  box-shadow: 0 0 0 2px var(--teal);
+  border-color: var(--color-on-primary);
+  background: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary);
 }
 
 .route-stop--static .route-stop__dot {
@@ -409,13 +440,13 @@ a {
 }
 
 .visibility-label--public {
-  color: #ffffff;
-  background: var(--public);
+  color: var(--color-on-primary);
+  background: var(--color-public);
 }
 
 .visibility-label--private {
-  color: #ffffff;
-  background: var(--private);
+  color: var(--color-on-primary);
+  background: var(--color-private);
 }
 
 .panel-footnote {
@@ -472,12 +503,12 @@ select:hover {
 }
 
 .button--primary {
-  color: #ffffff;
-  background: var(--teal);
+  color: var(--color-on-primary);
+  background: var(--color-primary);
 }
 
 .button--primary:hover {
-  background: var(--teal-dark);
+  background: var(--color-primary-strong);
 }
 
 .button--secondary {
@@ -499,8 +530,8 @@ select:hover {
 }
 
 .button--text {
-  min-height: 40px;
-  color: var(--teal-dark);
+  min-height: var(--touch-target);
+  color: var(--color-primary-strong);
   background: transparent;
   text-decoration: underline;
   text-underline-offset: 0.2em;
@@ -591,7 +622,7 @@ select:hover {
 }
 
 .observation-option {
-  min-height: 38px;
+  min-height: var(--touch-target);
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -724,7 +755,7 @@ select:hover {
 }
 
 .text-link {
-  color: #075b57;
+  color: var(--color-primary-strong);
   font-size: 0.9rem;
   font-weight: 700;
 }

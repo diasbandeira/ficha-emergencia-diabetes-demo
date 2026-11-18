@@ -1,14 +1,15 @@
 {
   "schema-version": 1,
-  "feature-dir": "_reversa_forward/001-validar-prototipo-emergencia",
-  "feature-id": "001",
-  "short-name": "validar-prototipo-emergencia",
-  "started-at": "2026-11-08T20:20:42-03:00",
-  "current-stage": "coding-em-progresso",
+  "feature-dir": "_reversa_forward/002-layout-implementacao-real",
+  "feature-id": "002",
+  "short-name": "layout-implementacao-real",
+  "started-at": "2026-11-18T20:04:00Z",
+  "current-stage": "done",
   "stages-completed": [
     "requirements",
     "plan",
-    "to-do"
+    "to-do",
+    "coding"
   ],
   "paused-features": []
 }
