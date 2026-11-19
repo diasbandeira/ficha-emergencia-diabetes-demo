@@ -1,0 +1,26 @@
+{
+  "schema-version": 1,
+  "started-at": "2026-11-18T22:40:00Z",
+  "status": "done",
+  "answers": {
+    "target": "coding",
+    "doubts": "file",
+    "optional-stages": false,
+    "on-failure": "stop"
+  },
+  "queue": [
+    {
+      "item": "003-poc-multiusuario-qr",
+      "feature-dir": "_reversa_forward/003-poc-multiusuario-qr",
+  "status": "done",
+      "last-stage": "coding",
+      "note": "T003 e T019 bloqueadas por acesso externo; demais acoes [X]."
+    }
+  ],
+  "warnings": [
+    "allowLegacyEdits: true com allowedPaths vazio: escrita irrestrita no projeto.",
+    "T003 depende de criar projeto gratuito e OAuth Google (externo).",
+    "T016 depende de cadastrar VITE_BACKEND_URL e VITE_BACKEND_ANON_KEY em vars do repositorio.",
+    "T019 depende de duas contas reais para validar isolamento e QR."
+  ]
+}

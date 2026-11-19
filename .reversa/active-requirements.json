@@ -1,15 +1,19 @@
 {
   "schema-version": 1,
-  "feature-dir": "_reversa_forward/002-layout-implementacao-real",
-  "feature-id": "002",
-  "short-name": "layout-implementacao-real",
-  "started-at": "2026-11-18T20:04:00Z",
-  "current-stage": "done",
+  "feature-dir": "_reversa_forward/003-poc-multiusuario-qr",
+  "feature-id": "003",
+  "short-name": "poc-multiusuario-qr",
+  "started-at": "2026-11-18T22:10:00Z",
+  "current-stage": "coding",
   "stages-completed": [
     "requirements",
     "plan",
     "to-do",
     "coding"
+  ],
+  "blocked-actions": [
+    "T003",
+    "T019"
   ],
   "paused-features": []
 }

@@ -1,0 +1,21 @@
+{"ts":"2026-11-19T10:00:00Z","action":"T001","status":"done","files":["_reversa_forward/003-poc-multiusuario-qr/investigation.md","_reversa_forward/003-poc-multiusuario-qr/actions.md"]}
+{"ts":"2026-11-19T10:02:00Z","action":"T002","status":"done","files":["package.json","package-lock.json",".env.example"]}
+{"ts":"2026-11-19T10:03:00Z","action":"T003","status":"blocked","files":[],"note":"Exige acesso a conta externa e configuracao OAuth Google."}
+{"ts":"2026-11-19T10:10:00Z","action":"T004","status":"done","files":["supabase/migrations/0001_init.sql"]}
+{"ts":"2026-11-19T10:16:00Z","action":"T005","status":"done","files":["supabase/migrations/0002_rls.sql"]}
+{"ts":"2026-11-19T10:18:00Z","action":"T006","status":"done","files":["_reversa_forward/003-poc-multiusuario-qr/onboarding.md"]}
+{"ts":"2026-11-19T10:20:00Z","action":"T007","status":"done","files":["src/lib/backend.ts","src/auth/AuthProvider.tsx","src/vite-env.d.ts"]}
+{"ts":"2026-11-19T10:24:00Z","action":"T008","status":"done","files":["src/services/cardService.ts","src/types/card.ts"]}
+{"ts":"2026-11-19T10:26:00Z","action":"T009","status":"done","files":["src/pages/Login.tsx"]}
+{"ts":"2026-11-19T10:30:00Z","action":"T010","status":"done","files":["src/pages/MyCard.tsx"]}
+{"ts":"2026-11-19T10:32:00Z","action":"T011","status":"done","files":["src/components/ConsentGate.tsx"]}
+{"ts":"2026-11-19T10:35:00Z","action":"T012","status":"done","files":["src/pages/CardQr.tsx"]}
+{"ts":"2026-11-19T10:38:00Z","action":"T013","status":"done","files":["src/pages/PublicCard.tsx"]}
+{"ts":"2026-11-19T10:42:00Z","action":"T014","status":"done","files":["src/navigation/hashRoute.ts","src/App.tsx"]}
+{"ts":"2026-11-19T10:44:00Z","action":"T015","status":"done","files":["src/components/emergency-demo/PublicBlockList.tsx","src/components/emergency-demo/EmergencyView.tsx","src/pages/PublicCard.tsx"]}
+{"ts":"2026-11-19T10:46:00Z","action":"T016","status":"done","files":[".github/workflows/pages.yml"],"note":"Variaveis precisam existir em vars do repositorio."}
+{"ts":"2026-11-19T10:50:00Z","action":"T017","status":"done","files":["src/styles.css"]}
+{"ts":"2026-11-19T10:54:00Z","action":"T018","status":"done","files":["src/styles.css"],"note":"Revisao de codigo; inspecao visual humana pendente."}
+{"ts":"2026-11-19T10:56:00Z","action":"T019","status":"blocked","files":["_reversa_forward/003-poc-multiusuario-qr/onboarding.md"],"note":"Build e smoke test sem backend feitos; faltam duas contas reais (T003)."}
+{"ts":"2026-11-19T10:58:00Z","action":"T020","status":"done","files":["_reversa_forward/003-poc-multiusuario-qr/onboarding.md"]}
+{"ts":"2026-11-19T11:00:00Z","action":"T021","status":"done","files":["_reversa_forward/003-poc-multiusuario-qr/onboarding.md"]}
