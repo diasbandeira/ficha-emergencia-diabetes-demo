@@ -3,6 +3,7 @@ import {
   demoBlocks,
   type DemoContactOption,
 } from "../../data/emergencyDemoData";
+import PublicBlockList from "./PublicBlockList";
 
 type EmergencyViewProps = {
   contact: DemoContactOption;
@@ -98,14 +99,13 @@ export default function EmergencyView({
               </div>
               <span className="route-label">Conteúdo fictício</span>
             </div>
-            <dl className="public-list">
-              {publicBlocks.map((block) => (
-                <div className="public-row" key={block.id}>
-                  <dt>{block.label}</dt>
-                  <dd>{block.value}</dd>
-                </div>
-              ))}
-            </dl>
+            <PublicBlockList
+              items={publicBlocks.map((block) => ({
+                id: block.id,
+                label: block.label,
+                value: block.value,
+              }))}
+            />
             <p className="panel-footnote">
               Esta página não contém instruções clínicas nem um canal de
               atendimento.

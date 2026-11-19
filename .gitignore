@@ -4,3 +4,5 @@ dist/
 npm-debug.log*
 .reversa/config.user.toml
 .playwright-cli/
+.env.local
+.env.*.local
